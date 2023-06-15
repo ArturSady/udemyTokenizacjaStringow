@@ -12,21 +12,7 @@ public class Main {
 
          try{
 
-             PrintWriter writer = new PrintWriter(new FileWriter("baza.txt"));
 
-                Towar.zapiszDoPliku(towars, writer);
-             writer.close();
-
-             BufferedReader bufferedReader = new BufferedReader(new FileReader("baza.txt"));
-             Towar[] towar2 = Towar.odczytajZPliku(bufferedReader);
-             System.out.println();
-
-             for (int i = 0; i < towar2.length; i++) {
-                 System.out.println(towar2[i]);
-
-             }
-
-             bufferedReader.close();
 
          }catch (IOException e){
              System.out.println(e.getMessage());
