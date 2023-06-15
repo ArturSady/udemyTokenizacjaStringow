@@ -19,6 +19,7 @@ public class Main {
 
              BufferedReader bufferedReader = new BufferedReader(new FileReader("baza.txt"));
              Towar[] towar2 = Towar.odczytajZPliku(bufferedReader);
+             System.out.println();
 
              for (int i = 0; i < towar2.length; i++) {
                  System.out.println(towar2[i]);
